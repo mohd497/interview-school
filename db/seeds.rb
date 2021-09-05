@@ -1,2 +1,8 @@
-Rails.logger = Logger.new(STDOUT)
-Rake::Task['db:fixtures:load'].invoke
+WeekDay.find_or_create_by(name: 'Monday')
+WeekDay.find_or_create_by(name: 'Tuesday')
+WeekDay.find_or_create_by(name: 'Wednesday')
+WeekDay.find_or_create_by(name: 'Thursday')
+WeekDay.find_or_create_by(name: 'Friday')
+Student.find_or_create_by(name: 'Test Student')
+Teacher.find_or_create_by(first_name: 'Test', last_name: "Teacher")
+Subject.find_or_create_by(name: 'Test Subject')
